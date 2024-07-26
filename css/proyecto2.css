@@ -1,26 +1,41 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: Helvetica;
-  
+    list-style: none;
+    text-decoration: none;
+    font-family: helvetica;
 }
-.head{
+
+.head {
     display: grid;
     background-color: #252323;
     height: 100px;
     border: 1px solid #249749b9;
 
 }
-.txt{
+
+.txt {
     color: white;
     font-family: helvetica;
     display: grid;
-    text-align: center;
+    margin-left: 130px;
     font-size: 350%;
     margin-top: 20px;
 
 }
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: -80px;
+    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
 .section {
     width: 400px;
     height: 340px;
@@ -31,7 +46,8 @@
     padding: 20px 30px;
     border-top: 4px solid #249749b9;
     color: white;
-    
+    border-radius: 15px;
+
 
 }
 
@@ -45,6 +61,7 @@
     font-family: helvetica;
 
 }
+
 .logo {
     display: flex;
     align-content: center;
@@ -65,7 +82,7 @@
     color: white;
 }
 
-button.ingresar {
+button.boton {
     padding: 10px 145px;
     border: 1px outset buttonborder;
     border-radius: 3px;
@@ -76,6 +93,17 @@ button.ingresar {
     justify-content: center;
 }
 
+button.boton2 {
+    margin-top: 5px;
+    padding: 10px 135px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: white;
+    background-color: #ab010a;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
 
 .section p {
     width: 90px;
@@ -98,18 +126,14 @@ button.ingresar {
     border: 1px solid white;
 }
 
-.registrarse a{
+.boton2 a {
     list-style-type: none;
     text-decoration: none;
     color: white;
 }
-body{
-    background-image: url("/img/green.jpg");
+
+body {
+    background-image: url("/ProyectoJsTareas/img/green.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-h6 {
-    display: flex;
-    font-size: 15px;
-    margin-top: -30px;
 }
