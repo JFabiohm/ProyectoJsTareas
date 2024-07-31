@@ -13,17 +13,19 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         return;
     }
 
-    // Usar la misma clave 'user' que en el registro
+    
+
+    
     let users = JSON.parse(localStorage.getItem('user')) || [];
 
-    // Verificar si el usuario existe y si la contraseña es correcta
+   
     const user = users.find(user => user.email === email && user.password === password);
 
     if (user) {
         alert("Inicio de sesión exitoso.");
 
         setTimeout(() => {
-            window.location.href = 'ProyectoJsTareas/html/index2.html'; 
+            window.location.href = 'index3.html'; 
         }, 1000); 
     } else {
         messageElement.textContent = 'Usuario o contraseña incorrectos.';

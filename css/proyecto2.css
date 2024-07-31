@@ -136,4 +136,6 @@ body {
     background-image: url("/ProyectoJsTareas/img/green.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 1000px;
 }
+

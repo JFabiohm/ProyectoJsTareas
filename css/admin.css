@@ -1,0 +1,335 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: helvetica;
+}
+
+.head {
+    display: grid;
+    background-color: #252323;
+    height: 100px;
+    box-shadow: 7px 3px 7px #000;
+
+}
+
+.txt {
+    color: white;
+    font-family: helvetica;
+    display: grid;
+    margin-left: 130px;
+    font-size: 350%;
+    margin-top: 20px;
+
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: -80px;
+    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid green;
+    background-color: #ffffff;
+
+}
+
+
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+
+.tab button:hover {
+    background-color: #74e28c;
+}
+
+
+.tab button.active {
+    background-color: #74e28c;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    height: 10px;
+    margin-top: -55px;
+    margin-right: 600px;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.show {
+    display: block;
+}
+
+#events {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    border: 1px solid rgb(2, 22, 2);
+    box-shadow: 7px 13px 37px #000;
+    background-color: white;
+    height: 600px;
+    width: 800px;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+
+body {
+    background-image: url("/ProyectoJsTareas/img/green.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.row {
+    width: 500px;
+    height: 100px;
+    margin-left: 70%;
+
+}
+
+.gg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.moverT {
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 10%;
+
+}
+
+.moverT h3 {
+    color: rgb(0, 0, 0);
+    font-size: 280%;
+}
+
+#tarea {
+    height: 35px;
+    border-radius: 4px;
+}
+
+#agregar {
+    display: flex;
+    margin-left: 340px;
+    margin-top: -55px;
+    background-color: #252323;
+    color: white;
+    width: 80px;
+    height: 30px;
+
+}
+
+#agregar :hover {
+    border: 2px solid green;
+}
+
+.btnS {
+    display: flex;
+    width: 125px;
+    height: 35px;
+    margin-left: 50%;
+    margin-top: -33px;
+}
+
+
+#todo {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    border: 1px solid rgb(2, 22, 2);
+    background-color: white;
+    box-shadow: 7px 13px 37px #000;
+    height: 600px;
+    width: 800px;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.agre {
+    margin-left: 50%;
+    margin-top: -7.5%;
+
+}
+
+#agregar2 {
+    background-color: #252323;
+    color: white;
+    width: 80px;
+    height: 30px;
+}
+
+#calendar {
+    display: flex;
+    margin-left: 30%;
+    margin-top: -8%
+}
+
+.moverT2 {
+
+    margin-left: 10%;
+    margin-top: 10%;
+
+}
+
+.moverT2 h3 {
+    color: rgb(0, 0, 0);
+    font-size: 280%;
+}
+
+#tarea2 {
+    height: 35px;
+    border-radius: 4px;
+}
+
+#btnEditar1 {
+    background-color: #74e28c
+}
+
+@media only screen and (max-width: 1200px) {
+    .moverH {}
+
+    .nav {
+        display: flex;
+        margin-right: 23%;
+    }
+
+    #todo {
+        margin-left: -5%;
+    }
+
+    #events {
+        margin-left: -5%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .nav {
+        margin-right: -12%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .moverT {
+        margin-left: 2%;
+    }
+
+    .nav {
+        display: flex;
+        margin-left: 50%;
+    }
+
+    #todo {
+        width: 800px;
+        height: 400px;
+    }
+
+    #events {
+        width: 800px;
+        height: 400px;
+    }
+
+    body {
+        height: 1000px;
+    }
+
+    #calendar {
+        margin-left: 210px;
+        margin-top: -55px;
+    }
+
+    .td {
+        margin-left: -75px;
+    }
+
+    .agre {
+        margin-left: 350px;
+        margin-top: -53px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 360px) {
+    .nav {
+        margin-top: 2%;
+        margin-left: -65%;
+    }
+
+    .moverT {
+        display: flexbox;
+
+    }
+
+    .btnS {
+       
+        margin-left: 1%;
+    }
+
+    #todo {
+        width: 400px;
+        height: 400px;
+    }
+
+    .ag {
+        margin-left: -45%;
+        margin-top: 10%;
+    }
+
+    body {
+        height: 1000px;
+    }
+
+    #events {
+        width: 400px;
+        height: 400px;
+
+    }
+
+    .moverT2 {
+        margin-left: 110px;
+    }
+
+    #calendar {
+        margin-top: -5%;
+        margin-left: 1%;
+    }
+
+    .agre {
+        margin-left: 45%;
+        margin-top: -15.3%;
+    }
+}

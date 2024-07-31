@@ -5,10 +5,22 @@ const contenedor = document.getElementById("contenedor");
 const form = document.getElementById("loginForm");
 
 guardar.addEventListener("click", function (event) {
-    event.preventDefault();  // Previene el comportamiento por defecto del botón de submit
+    event.preventDefault(); 
     
     let correoA = correo.value.trim();
     let contraseñaA = contraseña.value.trim();
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(correoA)) {
+        alert("Por favor, ingresa un correo electrónico válido con @.");
+        return;
+    }
+
+   
+    if (correoA === "" || contraseñaA === "") {
+        alert("Por favor completa todos los campos");
+        return;
+    }
     
     const user = JSON.parse(localStorage.getItem("user")) || [];
 
@@ -35,5 +47,7 @@ guardar.addEventListener("click", function (event) {
     localStorage.setItem("user", JSON.stringify(user));
 
     alert("Registro exitoso");
-    form.reset();  // Método corregido para resetear el formulario
+    form.reset(); 
+    
+    window.location.href = "index.html";
 });
